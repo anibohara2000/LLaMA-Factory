@@ -318,7 +318,7 @@
     "ms_hub_url": "AI-ModelScope/RLAIF-Nectar",
     "ranking": true
   },
-  "orca_dpo_de" : {
+  "orca_dpo_de": {
     "hf_hub_url": "mayflowergmbh/intel_orca_dpo_pairs_de",
     "ranking": true
   },
@@ -391,5 +391,14 @@
       "prompt": "content"
     },
     "folder": "python"
+  },
+  "peer_read": {
+    "file_name": "peer_read_train.json",
+    "file_sha1": "343c1a4e3fdf02f0036082d6b58ba5cdbfdd5920",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
   }
 }
