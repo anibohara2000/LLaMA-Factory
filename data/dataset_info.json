@@ -392,7 +392,7 @@
     },
     "folder": "python"
   },
-  "peer_read": {
+  "peer_read_train": {
     "file_name": "peer_read_train.json",
     "file_sha1": "343c1a4e3fdf02f0036082d6b58ba5cdbfdd5920",
     "columns": {
@@ -400,5 +400,23 @@
       "query": "input",
       "response": "output"
     }
-  }
+  },
+  "peer_read_dev": {
+    "file_name": "peer_read_dev.json",
+    "file_sha1": "eae4d8b920806f34f2217a1eafe83efb511335d9",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "peer_read_test": {
+    "file_name": "peer_read_test.json",
+    "file_sha1": "fc5c00d653392f2895fb0881241b8b4d3e64fe84",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
 }
