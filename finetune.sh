@@ -1,6 +1,6 @@
 #!/bin/bash
 
-MODEL_NAME=phi-2
+MODEL_NAME=phi-1_5
 STAGE=sft
 EPOCH=1.0 #3.0
 DATA=peer_read_train
@@ -13,7 +13,7 @@ PREDICTION_SAMPLES=20
 
 if [ ! -d $MODEL_PATH ]; then
     echo "Model not found: $MODEL_PATH"
-    return 1
+    exit 1
 fi
 
 if [ ! -d $SAVE_PATH ]; then
@@ -34,6 +34,7 @@ CUDA_VISIBLE_DEVICES=0 python src/train_bash.py \
     --finetuning_type lora \
     --lora_target $LoRA_TARGET \
     --output_dir $SAVE_PATH \
+    --overwrite_output_dir \
     --overwrite_cache \
     --per_device_train_batch_size 4 \
     --gradient_accumulation_steps 4 \
