@@ -1,6 +1,6 @@
 #!/bin/bash
 
-MODEL_NAME=phi-1_5
+MODEL_NAME=phi-2
 STAGE=sft
 EPOCH=1.0 #3.0
 DATA=peer_read_train
